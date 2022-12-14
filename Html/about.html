@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>About me</title>
+</head>
+<body>
+    <div class="welcome">
+        <span id="splash-overlay" class="splash"></span>
+        <span id="welcome" class="z-depth-4"></span>
+       
+        
+            <h1>Welcome to <br> <strong>About Me</strong></h1>
+           
+    </div>
+        
+    <div class="scroll">
+    <div class="container1">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
+  </div>
+
+
+
+    <div class="content-1" id="content">
+         <div class="img1"><img src="img/gif.gif" alt=""></div>
+           <div class="teks1">
+             <div class="wrap">
+              <div class="typing">Hai Guys...</div>
+              <p>
+                My name is M Zaki Putra S <br> I am 16 years old, I live in Jakarta  <br>
+                And I am an student in  <br> Smk Angkasa 1 Jakarta</p>
+             </div>
+           </div>
+    </div>
+
+    <div class="scroll2">
+      <div class="container2">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+    </div>
+
+        <div class="content-2">
+          <div class="teks2"><p class="satu"> <b> This My Project</b></p></div>
+          <div class="p">
+
+            <div class="baris1">
+            <div class="container-isi">
+              <div class="isi">
+                <a href="#">
+                  <div class="isi-overlay"></div>
+                  <img class="isi-image" src="img/p.png">
+                  <div class="isi-details fadeIn-bottom fadeIn-right">
+                    <h4>This is a my library-manager</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="container-isi">
+              <div class="isi">
+                <a href="#">
+                  <div class="isi-overlay"></div>
+                  <img class="isi-image" src="img/p1.png">
+                  <div class="isi-details fadeIn-bottom fadeIn-left">
+                    <h4>This is a my first game</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="baris2">
+            <div class="container-isi">
+              <div class="isi">
+                <a href="#">
+                  <div class="isi-overlay"></div>
+                  <img class="isi-image" src="img/p2.png">
+                  <div class="isi-details fadeIn-bottom fadeIn-bottom">
+                    <h4>My Calculator</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="container-isi">
+              <div class="isi">
+                <a href="#">
+                  <div class="isi-overlay"></div>
+                  <img class="isi-image" src="img/p3.png">
+                  <div class="isi-details fadeIn-bottom fadeIn-top">
+                    <h4>This is a my First Blog</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="f">
+          
+        </div>
+
+
+      <script>
+          $(".scroll").click(function() {
+            $('html,body').animate({
+                    scrollTop: $("#content").offset().top
+                },
+                'slow');
+        });
+
+        $(".scroll2").click(function() {
+            $('html,body').animate({
+                    scrollTop: $(".content-2").offset().top
+                },
+                'slow');
+        });
+      </script>
+</body>
+</html>
